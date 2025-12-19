@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulekha Style Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            background: #d32f2f;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            cursor: pointer;
+        }
+
+        /* Search Section */
+        .search-section {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-section input {
+            width: 60%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Categories Grid */
+        .categories {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category-box {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        /* Featured Listings */
+        .featured {
+            padding: 30px;
+        }
+
+        .featured h2 {
+            margin-bottom: 20px;
+        }
+
+        .listing {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Sulekha Clone</div>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Listings</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <h2>Find Local Services</h2>
+        <input type="text" placeholder="Search for services, businesses, events...">
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category-box">Home Services</div>
+        <div class="category-box">Education</div>
+        <div class="category-box">Events</div>
+        <div class="category-box">Real Estate</div>
+        <div class="category-box">Automobile</div>
+        <div class="category-box">Health</div>
+        <div class="category-box">Travel</div>
+        <div class="category-box">More...</div>
+    </div>
+
+    <!-- Featured Listings -->
+    <div class="featured">
+        <h2>Featured Listings</h2>
+
+        <div class="listing">
+            <h3>AC Repair Services</h3>
+            <p>Top-rated AC technicians near you.</p>
+        </div>
+
+        <div class="listing">
+            <h3>Home Tutors</h3>
+            <p>Experienced tutors for all subjects.</p>
+        </div>
+
+        <div class="listing">
+            <h3>Event Planners</h3>
+            <p>Make your events memorable.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 Sulekha Clone | All Rights Reserved
+    </div>
+
+</body>
+
+</html>
